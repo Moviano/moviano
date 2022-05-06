@@ -1,0 +1,167 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0c0e0c;
+    color:#eaebea;
+    font-size:20px;
+}
+body.dark-mode{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eaebea;
+    color: #0c0e0c;
+}
+ul#navigationBar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: #d8323c;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+ul#navigationBar.dark-mode{
+    background-color: #0c0e0c;
+    color:#eaebea;
+    position:fixed;
+    top:0;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin:0;
+    padding: 0;
+    width:100%;
+}
+li#navLogo{
+    float: left;
+}
+li#navLogo.dark-mode{
+    float:left;
+}
+li.navElement{
+    float:right;
+}
+li.navElement.dark-mode{
+    float: right;
+}
+li.navElement a {
+    display: block;
+    color: #0c0e0c;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;cursor: pointer;
+}
+
+#navNews #news.dark-mode,#navHome #home.dark-mode,#navShop #shop.dark-mode,
+#navSwitch #switch.dark-mode,#navLogo #logo.dark-mode,#navMenu #menu.dark-mode{
+    display: block;
+    color:#d8323c;
+    text-align: center; 
+    padding: 14px 16px;
+    text-decoration: none;cursor: pointer;
+}
+#navNews #news.dark-mode:hover,#navHome #home.dark-mode:hover,#navShop #shop.dark-mode:hover,
+#navSwitch #switch.dark-mode:hover,#navLogo #logo.dark-mode:hover,#navMenu #menu.dark-mode:hover{
+    color: #eee;
+}
+#navNews a:hover,#navHome a:hover,#navShop a:hover ,#navSwitch a:hover,#navMenu a:hover{
+    background-color: #0c0e0c;cursor: pointer;
+    color:#eaebea;
+}
+.clear{
+    clear:both;
+}
+#sidebar{
+    display:none;
+}
+#sidebar.dark-mode{
+    display:none;
+}
+a#menu:hover #sidebar{
+    display:block;
+    position: absolute;
+    list-style: none;
+    border:2px solid #d8323c;
+    padding: 0%;
+    right:0;
+    width:350px;
+    background-color: #0c0e0c;
+    color:#eaebea;
+    height: fit-content;
+    margin-top: 13px;
+}
+ul#sidebar #sidebarElement1,ul#sidebar #sidebarElement2,
+ul#sidebar #sidebarElement3,ul#sidebar #sidebarElement4,ul#sidebar #sidebarElement5{
+    text-align: end;
+    margin:15px;
+    padding: 7px;
+}
+ul#sidebar li:hover{
+    background-color:#d8323c ;
+    color:#0c0e0c;
+}
+ul#sidebar #sidebarElement1.dark-mode:hover,ul#sidebar #sidebarElement2.dark-mode:hover,
+ul#sidebar #sidebarElement3.dark-mode:hover,ul#sidebar #sidebarElement4.dark-mode:hover,
+ul#sidebar #sidebarElement5.dark-mode:hover{
+    background-color: #eaebea;
+    color: #d8323c;
+}
+#content{
+    text-align: center;
+}
+#content.dark-mode{
+    display: flex;overflow-x: scroll;
+}
+#gallery1 ,#gallery2,#gallery3,#gallery4,#gallery5,#gallery6{
+    float: right;
+}
+#gallery1 a img,#gallery2 a img,#gallery3 a img,#gallery4 a img, #gallery5 a img,#gallery6 a img{
+    float:left;
+}
+#gallery1:hover,#gallery2:hover,#gallery3:hover,#gallery4:hover,#gallery5:hover,#gallery6:hover{
+    border:2px solid #d8323c;
+}
+#gallery1.dark-mode:hover,#gallery2.dark-mode:hover,#gallery3.dark-mode:hover,
+#gallery4.dark-mode:hover,#gallery5.dark-mode:hover,#gallery6.dark-mode:hover{
+    border:2px solid #0c0e0c;
+}
+#footer  {
+    width:100%;
+    height:fit-content;
+    background-color: #d8323c;
+    color:#0c0e0c;
+    text-align: center;
+    text-transform: uppercase;
+}
+#footer.dark-mode  {
+    width:100%;
+    background-color: #0c0e0c;
+    color:#d8323c;
+}
+#footer td a.fa {
+    padding: 12px;
+    font-size: 12px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 2px;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+#footer td a.fa:hover {opacity: 0.7;}
+#footer td a.fa-facebook {background: #3B5998;color: white;}
+#footer td a.fa-twitter  {background: #55ACEE;color: white;}
+#footer td a.fa-youtube  {background: #bb0000;color: white;}
+.main-footer{
+    width:100%;
+    border-collapse: collapse;
+}
+td.raw1{
+    border-bottom: 1px dotted #0c0e0c;
+    width:50%;
+}
+td.raw1.dark-mode{
+    border-bottom: 1px dotted #d8323c;
+}
+td.callus ul{list-style-type: none;}
+td.callus ul li a{cursor: pointer;;margin-left:-40px;}
+td.callus ul li a:hover{color:#eaebea;}
